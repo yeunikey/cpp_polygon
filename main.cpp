@@ -3,7 +3,6 @@
 using namespace std;
 
 class People {
-
 private: /* Fields */
     string name;
     string surname;
@@ -56,13 +55,10 @@ public: /* Constructor, Getters & Setters and other methods */
 
 /* Student class which extands People */
 class Student: public People {
-
-private:
-
-    /* Fields */
+private: /* Fields */
     string university;
 
-public:
+public: /* Constructor, Getters & Setters and other methods */
 
     /* self Constructor and super Constructor */
     Student(string name, string surname, int age, string university): People(name, surname, age) {
